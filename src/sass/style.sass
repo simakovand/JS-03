@@ -1,0 +1,199 @@
+body
+    background-color:#E5E5E5
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+.container
+    width: 745px
+    margin: 0 auto
+    position: relative
+
+.logo
+    display: flex
+    justify-content: center
+    &__plane
+        margin: 50px 450px 0px 450px
+
+/* .row
+    margin-top: 20px */
+.filter
+    //display: inline-block
+    width: 232px
+    height: 227px
+    background-color: #fff
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+    border-radius: 5px 
+    &__title
+        padding: 20px 20px 0px 20px
+        font-family: Open Sans
+        text-transform: uppercase
+        font-style: normal
+        font-weight: 500
+        font-size: 12px
+        line-height: 12px
+        color: #4A4A4A
+        margin-bottom: 10px
+        
+    &__check
+        display: block
+        margin-bottom: 0.25em
+        padding-top: 10px
+        padding-bottom: 10px
+        padding-left: 3.8em
+        font-family: Open Sans
+        font-style: normal
+        font-weight: 400
+        font-size: 13px
+        line-height: 20px
+        color:#4A4A4A
+        &:hover
+            background-color: #F1FCFF
+            cursor: pointer
+        &__input
+            position: absolute
+            -webkit-appearance: none
+            &:checked + &__box
+                background-image: url(../icons/CheckboxON.svg)
+            //&:focus + &__box
+                //background-image: url(../icons/CheckboxON.svg)
+      
+            &__box
+                margin-left: -2.3em
+                position: absolute
+                width: 20px //1.55em
+                height: 20px //1.55em
+                background-image: url(../icons/Checkbox.svg)
+.filter-с
+    width: 232px
+    height: 177px
+    background-color: #fff
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+    border-radius: 5px
+    margin-top: 20px 
+    &__title
+        padding: 20px 20px 0px 20px
+        font-family: Open Sans
+        text-transform: uppercase
+        font-weight: 500
+        font-size: 12px
+        line-height: 12px
+        color: #4A4A4A
+        margin-bottom: 10px
+        
+    &__check
+        display: block
+        margin-bottom: 0.25em
+        padding-top: 10px
+        padding-bottom: 10px
+        padding-left: 3.8em
+        font-style: normal
+        font-weight: 400
+        font-size: 13px
+        line-height: 20px
+        color:#4A4A4A
+        &:hover
+            background-color: #F1FCFF
+            cursor: pointer
+        &__input
+            position: absolute
+            -webkit-appearance: none
+            &:checked + &__box
+                background-image: url(../icons/RadioButtonON.svg)
+            //&:focus + &__box
+                //background-image: url(../icons/CheckboxON.svg)
+      
+            &__box
+                margin-left: -2.3em
+                position: absolute
+                width: 22px //1.55em
+                height: 22px //1.55em
+                background-image: url(../icons/RadioButtonOff.svg)
+
+.nav
+    //width: 502px
+
+.nav-item
+    width: 168px
+    height: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #fff
+    color: #4A4A4A
+    border-radius: 5px
+    font-family: Open Sans
+    font-weight: 500
+    font-style: normal
+    font-size: 12px
+    line-height: 20px
+    text-transform: uppercase
+    &:hover
+            background-color: #F1FCFF
+            cursor: pointer
+    &_active
+        border: none
+        color: #fff
+        background-color: #2196F3
+        &:hover
+            background-color: #2196F3
+
+.first-line
+    margin-top: 20px
+
+.second-line
+    margin-top: 10px
+
+.ticket
+    //width: 502px
+    height: 184px
+    background-color: #fff
+    border-radius: 5px
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1)
+    margin-top: 20px
+    &__header
+        margin-top: 20px
+        display: flex
+        justify-content: space-between
+        margin-top: 20px
+        &__price
+            font-family: Open Sans
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            color: #2196F3
+    &__line1
+        display: flex
+        justify-content: left
+        &__route, &__length, &__stops
+            color: #A0B0B9
+            text-transform: uppercase
+            font-family: Open Sans
+            font-weight: 500
+            font-size: 12px
+            &__time
+                color: #4A4A4A
+                text-transform: lowercase
+                font-size: 14px
+                font-style: normal
+            &__add
+                color: #4A4A4A
+                font-size: 14px
+                font-style: normal
+                text-transform: uppercase
+.more-tickets
+    margin-top: 20px
+    height: 50px
+    //width: 502px
+    background: #2196F3
+    border-radius: 5px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 12px
+    text-transform: uppercase
+    color: #fff
+    border: 0
+
+@import '../sass/_media'
